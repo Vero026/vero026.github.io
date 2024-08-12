@@ -1,0 +1,100 @@
+body {
+  /*background-color: blue;
+  background-color: royalblue;
+  */
+
+  background-image: 
+  url(imagenes/fondopant1.jpg);
+
+  background-repeat: repeat;
+ 
+ 
+ }
+
+ #titulo{
+   font-style: oblique;
+   text-align: center;
+   
+   
+}
+
+p{
+   /*background-color: rgb(191, 238, 246);*/
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: x-large;
+   
+   
+  
+   
+
+}
+
+.imagenes{
+  
+   display: flex;
+   justify-content: space-around;
+   gap: 1em;
+   margin: auto;
+   
+
+}
+
+.imagenes img{
+   display: flex;
+   gap: 1em;
+   justify-content: center;
+   max-width: auto;
+   max-height: 650px;
+   border: 2px solid royalblue;
+ border-radius: 5px;
+}
+
+
+
+#botones {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 15px 25px;
+  
+  
+     
+}
+h1{
+   font-family: "sofia", sans-serif;
+   font-size: 30px;
+ text-shadow: 3px 3px 3px #ababab;
+
+   text-align: center;
+}
+
+h2{
+ text-align: center;
+ /*background-color: rgb(100, 96, 158);*/
+ 
+ 
+
+}
+
+.bakr{
+   background-color: aqua;
+   
+}
+
+.btn{
+ height: 25px;
+ width: 100px;
+ /*border: solid red;*/
+ 
+}
+.btn:hover{
+ background-color: royalblue;
+}
+
+/*
+div:hover {
+   background-color: greenyellow;
+ }
+   
+   
