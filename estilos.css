@@ -1,8 +1,4 @@
 body {
-  /*background-color: blue;
-  background-color: royalblue;
-  */
-
   background-image: 
   url(imagenes/fondopant1.jpg);
 
@@ -13,8 +9,7 @@ body {
 
  #titulo{
    font-style: oblique;
-   text-align: center;
-   
+   text-align: center;  
    
 }
 
@@ -24,20 +19,15 @@ p{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: x-large;
    
-   
-  
-   
-
 }
 
 .imagenes{
   
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    gap: 1em;
    margin: auto;
-   
-
 }
 
 .imagenes img{
@@ -53,14 +43,14 @@ p{
 
 
 #botones {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  padding: 15px 25px;
-  
-  
-     
-}
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: row;
+   padding: 2px 2px;
+   gap: 0.25em;   
+}    
+
+
 h1{
    font-family: "sofia", sans-serif;
    font-size: 30px;
@@ -71,30 +61,24 @@ h1{
 
 h2{
  text-align: center;
- /*background-color: rgb(100, 96, 158);*/
  
- 
-
-}
+ }
 
 .bakr{
-   background-color: aqua;
-   
+   background-color: aqua;   
 }
 
 .btn{
  height: 25px;
  width: 100px;
- /*border: solid red;*/
- 
 }
 .btn:hover{
  background-color: royalblue;
 }
 
-/*
-div:hover {
-   background-color: greenyellow;
- }
-   
+@media (min-width: 769px) {
+   body{
+
+   }
+   }
    
