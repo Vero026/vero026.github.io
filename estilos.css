@@ -1,24 +1,23 @@
 body {
-  background-image: 
-  url(imagenes/fondopant1.jpg);
-
+  background-image: url(imagenes/fondopant1.jpg);
   background-repeat: repeat;
- 
- 
+  margin: 0;
+  padding: 0;
  }
 
  #titulo{
    font-style: oblique;
-   text-align: center;  
+     
    
 }
 
-p{
-   /*background-color: rgb(191, 238, 246);*/
+p {
+   /* background-color: rgb(191, 238, 246); */
    text-align: center;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: x-large;
-   
+   font-size: 1.3em;
+   line-height: 1.4;
+   margin: 20px 0;
 }
 
 .imagenes{
@@ -35,7 +34,7 @@ p{
    gap: 1em;
    justify-content: center;
    max-width: auto;
-   max-height: 650px;
+   max-height: 495px;
    border: 2px solid royalblue;
  border-radius: 5px;
 }
@@ -45,40 +44,69 @@ p{
 #botones {
    display: flex;
    justify-content: flex-end;
-   flex-direction: row;
-   padding: 2px 2px;
-   gap: 0.25em;   
-}    
+   flex-wrap: wrap;
+   padding: 5px;
+   gap: 0.5em;
+}  
 
 
-h1{
+h1, h2 {
    font-family: "sofia", sans-serif;
-   font-size: 30px;
- text-shadow: 3px 3px 3px #ababab;
-
    text-align: center;
+   font-size: 1.60em;
+   text-shadow: 3px 3px 3px #ababab;
 }
-
-h2{
- text-align: center;
- 
- }
 
 .bakr{
-   background-color: aqua;   
+   background-color: rgb(117, 71, 202);   
 }
 
-.btn{
- height: 25px;
- width: 100px;
+.btn {
+   height: 25px;
+   width: 100px;
+   padding: 0 10px;
+   cursor: pointer;
+   border-radius: 5px;
 }
 .btn:hover{
  background-color: royalblue;
 }
 
-@media (min-width: 769px) {
-   body{
+@media (min-width: 768px) {
+  h1 {
+   font-size: 1.8em; /*Ajustes pra pantallas pequeñas*/
+}
 
+h2{
+   font-size: 1.5em;
+}
+
+.btn{
+  
+   font-size: -1em;
+}
+
+.imagenes img{
+   max-width: 80%;
+}
+
+p{
+   font-size: 1.3em;
+}
+
+#botones{
+   align-items: center;
+}
+
+}
+
+@media(max-width: 480px){
+   h1{
+      font-size: 1.5em;
    }
+
+   .btn{
+      font-size: 0.9em;
    }
+}
    
